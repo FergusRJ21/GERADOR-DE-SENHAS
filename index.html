@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerador de Senhas Seguras | Ferramenta Gratuita</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="adsense-box">
+        <p>Espaço reservado para o Google AdSense (Cabeçalho)</p>
+    </div>
+
+    <div class="container-central">
+
+        <aside class="adsense-lateral">
+            <p>AdSense<br>(Esquerda)</p>
+        </aside>
+
+        <main class="cartao-principal">
+            <h1>Gerador de Senhas</h1>
+            <p>Personalize e proteja as suas contas.</p>
+
+            <div class="caixa-resultado">
+                <div class="input-wrapper">
+                    <input type="text" id="senha-resultado" readonly value="SuaSenhaAqui...">
+                    <button id="btn-ocultar" class="icone-olho" title="Ocultar/Mostrar Senha">👁️</button>
+                </div>
+                <button id="btn-copiar" class="botao-secundario">📋 Copiar Senha</button>
+            </div>
+
+            <div class="controles">
+                <label class="controle-tamanho">
+                    Tamanho da Senha: <span id="tamanho-valor">16</span>
+                    <input type="range" id="tamanho-senha" min="4" max="128" value="16">
+                </label>
+
+                <div class="opcoes-senha">
+                    <label class="opcao-checkbox">
+                        <input type="checkbox" id="chk-maiusculas" checked>
+                        Letras Maiúsculas (A-Z)
+                    </label>
+                    <label class="opcao-checkbox">
+                        <input type="checkbox" id="chk-minusculas" checked>
+                        Letras Minúsculas (a-z)
+                    </label>
+                    <label class="opcao-checkbox">
+                        <input type="checkbox" id="chk-numeros" checked>
+                        Números (0-9)
+                    </label>
+                    <label class="opcao-checkbox">
+                        <input type="checkbox" id="chk-simbolos" checked>
+                        Símbolos (!@#$%^&*)
+                    </label>
+                </div>
+            </div>
+
+            <button id="btn-gerar" class="botao-estiloso">Gerar Nova Senha</button>
+        </main>
+
+        <aside class="adsense-lateral">
+            <p>AdSense<br>(Direita)</p>
+        </aside>
+
+    </div>
+
+    <div class="adsense-box">
+        <p>Espaço reservado para o Google AdSense (Rodapé)</p>
+    </div>
+
+    <footer class="rodape-creditos">
+        <p>&copy; 2026 Todos os direitos reservados.</p>
+        <p>Desenvolvido por <a href="https://fergusrj21.github.io/FergusOnRails/" target="_blank">Dev Fergus</a>.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

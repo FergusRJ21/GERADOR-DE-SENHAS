@@ -1,0 +1,264 @@
+/* =========================================
+   1. RESET E ESTILOS GERAIS
+   ========================================= */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #121212;
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 20px;
+    overflow-x: hidden;
+}
+
+/* =========================================
+   2. ÁREAS DO GOOGLE ADSENSE
+   ========================================= */
+.adsense-box {
+    width: 100%;
+    max-width: 728px;
+    min-height: 90px;
+    background-color: #2a2a2a;
+    border: 1px dashed #666;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 0;
+    color: #888;
+    text-align: center;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+.adsense-lateral {
+    width: 160px;
+    height: 600px;
+    background-color: #2a2a2a;
+    border: 1px dashed #666;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #888;
+    text-align: center;
+    border-radius: 8px;
+}
+
+/* =========================================
+   3. ESTRUTURA CENTRAL E FERRAMENTA
+   ========================================= */
+.container-central {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    width: 100%;
+    max-width: 1200px;
+}
+
+.cartao-principal {
+    background-color: #1e1e1e;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    text-align: center;
+    width: 100%;
+    max-width: 400px;
+    transition: padding 0.3s ease;
+}
+
+.cartao-principal h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    transition: font-size 0.3s ease;
+}
+
+.cartao-principal p {
+    color: #aaaaaa;
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+/* NOVOS ESTILOS PARA A ÁREA DE RESULTADO, INPUT E BOTÃO DE COPIAR */
+.caixa-resultado {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.input-wrapper {
+    position: relative;
+    width: 100%;
+}
+
+#senha-resultado {
+    width: 100%;
+    background-color: #000000;
+    padding: 15px 45px 15px 15px; /* Espaço extra à direita para o ícone não sobrepor o texto */
+    border-radius: 8px;
+    border: 1px solid #333;
+    font-size: 20px;
+    letter-spacing: 2px;
+    color: #00ff88;
+    outline: none;
+}
+
+/* O truque da ilusão ótica do ícone */
+.icone-olho {
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%); /* Centra o ícone verticalmente */
+    background: none;
+    border: none;
+    font-size: 18px;
+    cursor: pointer;
+    color: #888;
+    transition: transform 0.2s;
+}
+
+.icone-olho:hover {
+    transform: translateY(-50%) scale(1.2); /* Aumenta um pouco ao passar o rato */
+}
+
+.botao-secundario {
+    background-color: #333333;
+    color: #ffffff;
+    border: none;
+    padding: 10px;
+    font-size: 14px;
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+    width: 100%;
+}
+
+.botao-secundario:hover {
+    background-color: #444444;
+}
+
+/* =========================================
+   4. CONTROLES E BOTÕES
+   ========================================= */
+.controles {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.controle-tamanho {
+    display: flex;
+    flex-direction: column;
+    font-size: 14px;
+    color: #cccccc;
+    width: 100%;
+}
+
+.controle-tamanho input[type="range"] {
+    margin-top: 10px;
+    width: 100%;
+    accent-color: #00ff88;
+}
+
+.opcoes-senha {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.opcao-checkbox {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: 14px;
+    color: #cccccc;
+    cursor: pointer;
+}
+
+.opcao-checkbox input[type="checkbox"] {
+    margin-right: 10px;
+    width: 16px;
+    height: 16px;
+    accent-color: #00ff88;
+    cursor: pointer;
+}
+
+.botao-estiloso {
+    background-color: #00ff88;
+    color: #000000;
+    border: none;
+    padding: 15px 30px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    width: 100%;
+}
+
+.botao-estiloso:hover {
+    background-color: #00cc6a;
+}
+
+/* =========================================
+   5. RODAPÉ DE CRÉDITOS
+   ========================================= */
+.rodape-creditos {
+    margin-top: 10px;
+    text-align: center;
+    font-size: 14px;
+    color: #888888;
+    line-height: 1.5;
+}
+
+.rodape-creditos a {
+    color: #00ff88;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.rodape-creditos a:hover {
+    color: #00cc6a;
+    text-decoration: underline;
+}
+
+/* =========================================
+   6. RESPONSIVIDADE
+   ========================================= */
+@media (max-width: 900px) {
+    .container-central {
+        gap: 0;
+    }
+    .adsense-lateral {
+        display: none; 
+    }
+}
+
+@media (max-width: 600px) {
+    body { padding: 10px; }
+    .cartao-principal { padding: 25px 20px; }
+    .cartao-principal h1 { font-size: 20px; }
+    
+    #senha-resultado {
+        font-size: 16px;
+        padding: 12px 40px 12px 12px;
+    }
+
+    .adsense-box {
+        min-height: 50px;
+        margin: 15px 0;
+        font-size: 12px;
+    }
+}
